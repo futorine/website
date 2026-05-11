@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en" data-theme="paper">
+<head>
+  <meta charset="utf-8">
+  <title>Futorine Consulting — Web3 &amp; AI systems, built to last.</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Futorine Consulting is a protocol-engineering studio building Rust-native decentralized apps, AI systems, identity, DAOs, and wallets. ZK circuits in Noir on Aztec. P2P infrastructure with libp2p and IPFS and DHT's.">
+  <meta name="theme-color" content="#0a1312">
+
+  <meta property="og:title" content="Futorine Consulting — Web3 & AI systems, built to last.">
+  <meta property="og:description" content="Protocol-engineering studio. Rust-native decentralized apps, AI, identity, DAOs, wallets.">
+  <meta property="og:type" content="website">
+
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="alternate icon" type="image/png" href="/favicon.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem('fut-theme');
+        var valid = ['dark', 'paper', 'light'];
+        var theme = valid.indexOf(saved) !== -1 ? saved : 'paper';
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Inter+Tight:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <fut-root></fut-root>
+</body>
+</html>
