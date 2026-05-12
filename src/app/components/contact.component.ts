@@ -43,8 +43,8 @@ interface ContactForm {
                   Direct
                 </dt>
                 <dd>
-                  <a href="mailto:info@futorine.com" class="font-display text-2xl md:text-3xl text-bone-50 hover:text-moss-300 transition-colors link-grow">
-                    info&#64;futorine.com
+                  <a href="mailto:info@futorine-consulting.net" class="font-display text-2xl md:text-3xl text-bone-50 hover:text-moss-300 transition-colors link-grow">
+                    info&#64;futorine-consulting.net
                   </a>
                 </dd>
               </div>

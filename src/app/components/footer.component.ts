@@ -47,7 +47,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
           <div class="md:col-span-2">
             <div class="font-mono text-[0.68rem] uppercase tracking-[0.25em] text-bone-400 mb-4">Contact</div>
             <ul class="space-y-2.5 text-bone-200 text-[0.92rem]">
-              <li><a href="mailto:info&#64;futorine.com" class="hover:text-moss-300 transition-colors">info&#64;futorine.com</a></li>
+              <li><a href="mailto:info&#64;futorine-consulting.net" class="hover:text-moss-300 transition-colors">info&#64;futorine-consulting.net</a></li>
               <li class="text-bone-400">Lisbon, Portugal</li>
             </ul>
           </div>
