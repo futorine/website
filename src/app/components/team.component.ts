@@ -46,7 +46,7 @@ import { TEAM, TeamMember } from '../data/content';
 
               <div class="flex items-center gap-5 mb-8">
                 <div class="w-20 h-20 rounded-full overflow-hidden ring-2 ring-moss-700 relative z-10 isolate">
-                  <img src="public/tcal_consultant.png" alt="{{ principal.initials }}" class="block w-full h-full object-cover">
+                  <img src="/assets/tcal_consultant_m.png" alt="{{ principal.initials }}" class="block w-full h-full object-cover">
                 </div>
                 <div>
                   <h3 class="font-display text-3xl text-bone-50 leading-tight">{{ principal.name }}</h3>

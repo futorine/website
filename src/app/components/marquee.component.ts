@@ -54,42 +54,42 @@ type MarqueePanel = {
 export class MarqueeComponent {
   protected readonly panels: MarqueePanel[] = [
     {
-      src: 'public/1-cube.png',
+      src: 'assets/1-cube.png',
       alt: 'Tree of life cube artwork',
       eyebrow: 'Protocol systems',
       title: 'Cryptographic core',
       imageClass: 'absolute inset-0 h-full w-full object-contain p-5 md:p-6 scale-110 opacity-90'
     },
     {
-      src: 'public/2-icosahedron.png',
+      src: 'assets/2-icosahedron.png',
       alt: 'Icosahedron artwork',
       eyebrow: 'Founder-led',
       title: 'Built by seniors',
       imageClass: 'absolute inset-0 h-full w-full object-cover object-center sepia-[0.15] contrast-[1.02] saturate-[0.9]'
     },
     {
-      src: 'public/3-octahedron.png',
+      src: 'assets/3-octahedron.png',
       alt: 'Octahedron artwork',
       eyebrow: 'Identity',
       title: 'Zero-knowledge rails',
       imageClass: 'absolute inset-0 h-full w-full object-contain p-4 md:p-5 scale-125 rotate-6 opacity-85'
     },
     {
-      src: 'public/4-dodecahedron.png',
+      src: 'assets/4-dodecahedron.png',
       alt: 'Dodecahedron artwork',
       eyebrow: 'Delivery',
       title: 'Architecture that ships',
       imageClass: 'absolute inset-0 h-full w-full object-cover object-top sepia-[0.1] contrast-[1.04] saturate-[0.88] scale-105'
     },
     {
-      src: 'public/5-ascension.png',
+      src: 'assets/5-ascension.png',
       alt: 'Ascension artwork',
       eyebrow: 'P2P systems',
       title: 'Offline-first thinking',
       imageClass: 'absolute inset-0 h-full w-full object-contain p-6 md:p-7 scale-[1.35] -rotate-4 opacity-80'
     },
     {
-      src: 'public/6-divini.png',
+      src: 'assets/6-divini.png',
       alt: 'Divini artwork',
       eyebrow: 'Product',
       title: 'Expert technical judgment',
