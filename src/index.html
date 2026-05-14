@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" data-theme="paper">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="utf-8">
   <title>Futorine Consulting — Web3 &amp; AI systems, built to last.</title>
@@ -17,11 +17,29 @@
 
   <script>
     (function () {
+      var themeColors = {
+        dark: '#0a1312',
+        paper: '#f5edd8',
+        light: '#f9fafb'
+      };
+
+      function resolvePreferredTheme() {
+        if (typeof window.matchMedia !== 'function') {
+          return 'dark';
+        }
+
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+
       try {
         var saved = localStorage.getItem('fut-theme');
         var valid = ['dark', 'paper', 'light'];
-        var theme = valid.indexOf(saved) !== -1 ? saved : 'paper';
+        var theme = valid.indexOf(saved) !== -1 ? saved : resolvePreferredTheme();
         document.documentElement.setAttribute('data-theme', theme);
+        var meta = document.querySelector('meta[name="theme-color"]');
+        if (meta) {
+          meta.setAttribute('content', themeColors[theme]);
+        }
       } catch (e) {}
     })();
   </script>

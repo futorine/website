@@ -10,15 +10,15 @@ import { ThemeSwitcherComponent } from './theme-switcher.component';
       class="fixed top-0 left-0 right-0 z-50 transition-all duration-500"
       [class]="scrolled() ? 'backdrop-blur-xl bg-ink-900/75 border-b border-ink-700/60' : 'bg-transparent'"
     >
-      <div class="max-w-350 mx-auto px-6 md:px-10 py-5 flex items-center justify-between">
-        <a href="#top" class="flex items-center gap-2.5 group">
+      <div class="max-w-350 mx-auto px-4 sm:px-6 md:px-10 py-4 md:py-5 flex items-center justify-between gap-3">
+        <a href="#top" class="flex min-w-0 items-center gap-2.5 group">
           <span class="relative inline-block w-7 h-7">
             <span class="absolute inset-0 rounded-full bg-moss-400 blur-sm opacity-60 group-hover:opacity-90 transition-opacity"></span>
             <span class="absolute inset-0.75 rounded-full bg-linear-to-br from-moss-300 to-lagoon-500"></span>
             <span class="absolute inset-2.5 rounded-full bg-bone-50"></span>
           </span>
-          <span class="font-display text-[1.35rem] tracking-tight text-bone-50 font-medium">
-            futorine <span class="text-bone-400 font-normal">consulting</span>
+          <span class="truncate font-display text-[1.1rem] sm:text-[1.2rem] md:text-[1.35rem] tracking-tight text-bone-50 font-medium">
+            futorine <span class="hidden sm:inline text-bone-400 font-normal">consulting</span>
           </span>
         </a>
 
@@ -37,22 +37,24 @@ import { ThemeSwitcherComponent } from './theme-switcher.component';
           <span class="inline-block transition-transform duration-300 group-hover:translate-x-1">&rarr;</span>
         </a>
 
-        <fut-theme-switcher />
+        <div class="flex shrink-0 items-center gap-2">
+          <fut-theme-switcher />
 
-        <button
-          (click)="toggleMobile()"
-          class="md:hidden p-2 text-bone-100"
-          [attr.aria-expanded]="mobileOpen()"
-          aria-label="Toggle menu"
-        >
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-            @if (!mobileOpen()) {
-              <path d="M3 7h18M3 12h18M3 17h18" stroke-linecap="round" />
-            } @else {
-              <path d="M5 5l14 14M19 5l-14 14" stroke-linecap="round" />
-            }
-          </svg>
-        </button>
+          <button
+            (click)="toggleMobile()"
+            class="md:hidden p-2 text-bone-100"
+            [attr.aria-expanded]="mobileOpen()"
+            aria-label="Toggle menu"
+          >
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              @if (!mobileOpen()) {
+                <path d="M3 7h18M3 12h18M3 17h18" stroke-linecap="round" />
+              } @else {
+                <path d="M5 5l14 14M19 5l-14 14" stroke-linecap="round" />
+              }
+            </svg>
+          </button>
+        </div>
       </div>
 
       @if (mobileOpen()) {

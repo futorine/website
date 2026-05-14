@@ -21,6 +21,9 @@
 .bg-footer {
   background-color: var(--color-ink-950);
 }
+[data-theme="paper"] .bg-footer {
+  background-color: var(--color-ink-850);
+}
 [data-theme="light"] .bg-footer {
   background-color: var(--color-ink-900);
 }
