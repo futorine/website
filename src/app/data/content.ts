@@ -161,12 +161,28 @@ export const WORK: WorkItem[] = [
     highlight: 'Flagship'
   },
   {
+    year: '2026',
+    title: 'ZK delegated ballot voting ',
+    kind: 'Aztec Ecosystem, ZKP - circuits + smart contracts',
+    summary: 'Noir smart contracts for delegated agent based voting on the ethereum network. Aztec framework desktop app.',
+    stack: ['Rust', 'DApp', 'Aztec', 'Noir'],
+    highlight: 'prototyping'
+  },
+  {
+    year: '2025',
+    title: 'Oracle federation network',
+    kind: 'Orpherium framework ',
+    summary: 'distributed oracle-based knowledge graph framework engineered to significantly enhance neural-symbolic reasoning processes within AGI systems. Employing a distributed tetrahedral hierarchy of specialized agent nodes (Aggregators, Coherents, Oracles, and Sage Oracles). ',
+    stack: ['Rust', 'Python', 'Local LLM-RAG models', 'Cryptography'],
+    highlight: 'R&D'
+  },
+  {
     year: '2025',
     title: 'Recursive ZKP Prototype',
-    kind: 'Mina Protocol',
-    summary: 'Privacy-respecting infrastructure exploring recursive proofs at scale. Written in TypeScript with o1js.',
-    stack: ['TypeScript', 'o1js', 'ZKP'],
-    highlight: 'R&D'
+    kind: 'Mina Protocol + Nillion',
+    summary: 'Privacy-respecting infrastructure exploring recursive proofs at scale. Written in TypeScript with o1js. Rust implementation of the Chaum-Pedersen zero-knowledge protocol for cryptographic validation in blind computation.',
+    stack: ['TypeScript', 'o1js', 'ZKP', 'Rust', 'Cryptography'],
+    highlight: 'R&D + prototypes'
   },
   {
     year: '2024',
@@ -175,14 +191,6 @@ export const WORK: WorkItem[] = [
     summary: 'Wallet integration across Ethereum, Solana, and Holochain. ZK-based identity validation and ranking systems.',
     stack: ['Holochain', 'Rust', 'ZKPs', 'Multi-chain'],
     highlight: 'prototyping'
-  },
-  {
-    year: '2024',
-    title: 'Chaum-Pedersen ZKP',
-    kind: 'Nillion',
-    summary: 'Rust implementation of the Chaum-Pedersen zero-knowledge protocol for cryptographic validation in blind computation.',
-    stack: ['Rust', 'Cryptography'],
-    highlight: 'R&D'
   },
   {
     year: '2023→ongoing',
